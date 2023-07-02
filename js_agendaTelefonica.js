@@ -10,6 +10,7 @@ class AgendaTelefonica {
     }
   
     exibirMenu() {
+    
       console.log('########################');
       console.log('## Projeto Agenda JavaScript');
       console.log('Menu:');
