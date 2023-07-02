@@ -1,6 +1,6 @@
 import random
-print('ola mundo')
-print('ola mundo')
+print('ola mundo, alterei novo modelo')
+
 
 class SimuladoDados:
 
