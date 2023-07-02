@@ -1,5 +1,7 @@
 import random
 print('ola mundo')
+print('ola mundo')
+
 class SimuladoDados:
 
     def __init__(self):
