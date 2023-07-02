@@ -10,7 +10,7 @@ class AgendaTelefonica:
         ''')
 
     def Iniciar(self):
-        inicio1 = self.opcao()
+        inicio1 = self.opcao
 
 agenda = AgendaTelefonica()
 agenda.Iniciar()
