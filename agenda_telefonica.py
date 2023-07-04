@@ -11,14 +11,17 @@ class AgendaTelefonica:
         print('Menu:')
         print('[1] Cadastrar')
         print('[2] Excluir')
+        print('[3] Exibir Usuarios')
 
     def Iniciar(self):
-        while self.opcao not in ['1', '2']:
+        while self.opcao not in ['1', '2','3']:
             self.Exibir_menu()
             self.opcao = input('Escolha uma opção acima: ')
 
         if self.opcao == '1':
             self.Cadastrar()
+        elif self.opcao == '3':
+            self.Exibir_Contatos()
         else:
             self.Excluir()
 
@@ -36,7 +39,7 @@ class AgendaTelefonica:
             print(f'contatos salvo com sucesso')
         except:
             print('houve um ERRO')
-        
+    
 
     def Excluir(self):
         print(f'Você selecionou a opção de excluir o contato com ID {self.id}.')
