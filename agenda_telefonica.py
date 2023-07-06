@@ -10,34 +10,21 @@ class AgendaTelefonica:
         print('projeto agenda python')
         print('Menu:')
         print('[1] Cadastrar')
-<<<<<<< HEAD
         print('[2] Listar Conatos')
         print('[3] Excluir')
         print('[4] Buscar Pelo Nome')
+        print('nova funçao')
 
     def Iniciar(self):
         while self.opcao not in ['1', '2', '3', '5']:
-=======
-        print('[2] Excluir')
-        print('[3] Exibir Usuarios')
-
-    def Iniciar(self):
-        while self.opcao not in ['1', '2','3']:
->>>>>>> ef15ad97c0861413890dc00daed1164062b5040b
             self.Exibir_menu()
             self.opcao = input('Escolha uma opção acima: ')
 
         if self.opcao == '1':
             self.Cadastrar()
-<<<<<<< HEAD
         elif self.opcao == '2':
             self.Lista_contatos()
         elif self.opcao == '3':
-=======
-        elif self.opcao == '3':
-            self.Exibir_Contatos()
-        else:
->>>>>>> ef15ad97c0861413890dc00daed1164062b5040b
             self.Excluir()
         elif self.opcao == '5':
             self.Sair()
@@ -55,7 +42,6 @@ class AgendaTelefonica:
             agenda.close()
             print('Contato salvo com sucesso')
         except:
-<<<<<<< HEAD
             print('Houve um erro')
 
     def Lista_contatos(self):
@@ -67,10 +53,6 @@ class AgendaTelefonica:
     def Limpar(self):
         self.opcao = ''
         self.id = random.randint(1, 10000)
-=======
-            print('houve um ERRO')
-    
->>>>>>> ef15ad97c0861413890dc00daed1164062b5040b
 
     def Excluir(self):
         print(f'Você selecionou a opção de excluir o contato com ID {self.id}.')
