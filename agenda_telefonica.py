@@ -58,9 +58,14 @@ class AgendaTelefonica:
         self.id = random.randint(1, 10000)
 
     def Buscar_nome(self):
+        nome = input('Digite um Nome: ')
         agenda = open("agenda.txt", "r")
         for contato in agenda:
-            print(contato)
+            if nome.lower() in contato.split(";")[1]:
+                print(contato)
+            
+            
+            
         agenda.close()
 
 
