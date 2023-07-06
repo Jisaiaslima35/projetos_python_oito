@@ -13,10 +13,10 @@ class AgendaTelefonica:
         print('[2] Listar Conatos')
         print('[3] Excluir')
         print('[4] Buscar Pelo Nome')
-        print('nova funçao')
+        
 
     def Iniciar(self):
-        while self.opcao not in ['1', '2', '3', '5']:
+        while self.opcao not in ['1', '2', '3' ,'4','5']:
             self.Exibir_menu()
             self.opcao = input('Escolha uma opção acima: ')
 
@@ -26,6 +26,8 @@ class AgendaTelefonica:
             self.Lista_contatos()
         elif self.opcao == '3':
             self.Excluir()
+        elif self.opcao == '4':
+            self.Buscar_nome()
         elif self.opcao == '5':
             self.Sair()
 
@@ -53,6 +55,13 @@ class AgendaTelefonica:
     def Limpar(self):
         self.opcao = ''
         self.id = random.randint(1, 10000)
+
+    def Buscar_nome(self):
+        agenda = open("agenda.txt", "r")
+        for contato in agenda:
+            print(contato)
+        agenda.close()
+
 
     def Excluir(self):
         print(f'Você selecionou a opção de excluir o contato com ID {self.id}.')
