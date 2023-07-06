@@ -13,6 +13,7 @@ class AgendaTelefonica:
         print('[2] Listar Conatos')
         print('[3] Excluir')
         print('[4] Buscar Pelo Nome')
+        print('oi')
         
 
     def Iniciar(self):
