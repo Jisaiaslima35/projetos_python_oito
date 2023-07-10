@@ -1,0 +1,5 @@
+pacotes necessarios:
+1 - flask
+2 - flask_sqlalchemy
+3 - mysql-connector-python
+4 - myqlclient
